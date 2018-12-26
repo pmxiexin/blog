@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://pmxiexin.com/"/>
-  <updated>2018-12-25T14:05:15.958Z</updated>
+  <updated>2018-12-26T05:13:48.945Z</updated>
   <id>http://pmxiexin.com/</id>
   
   <author>
@@ -20,8 +20,8 @@
     <title>测试一下</title>
     <link href="http://pmxiexin.com/2018/12/25/%E6%B5%8B%E8%AF%95%E4%B8%80%E4%B8%8B/"/>
     <id>http://pmxiexin.com/2018/12/25/测试一下/</id>
-    <published>2018-12-25T14:05:15.000Z</published>
-    <updated>2018-12-25T14:05:15.958Z</updated>
+    <published>2018-12-25T14:05:00.000Z</published>
+    <updated>2018-12-26T05:13:48.945Z</updated>
     
     <content type="html"><![CDATA[<p>啦啦啦啦啦啦，好好玩啊</p>]]></content>
     
@@ -35,6 +35,10 @@
     
     </summary>
     
+      <category term="test" scheme="http://pmxiexin.com/categories/test/"/>
+    
+    
+      <category term="test" scheme="http://pmxiexin.com/tags/test/"/>
     
   </entry>
   

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://pmxiexin.com/"/>
-  <updated>2018-12-26T05:13:48.945Z</updated>
+  <updated>2018-12-26T16:07:34.087Z</updated>
   <id>http://pmxiexin.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>再来一篇</title>
+    <link href="http://pmxiexin.com/2018/12/27/%E5%86%8D%E6%9D%A5%E4%B8%80%E7%AF%87/"/>
+    <id>http://pmxiexin.com/2018/12/27/再来一篇/</id>
+    <published>2018-12-26T16:07:33.000Z</published>
+    <updated>2018-12-26T16:07:34.087Z</updated>
+    
+    <content type="html"><![CDATA[<p>测试一下再来一篇</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;测试一下再来一篇&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>测试一下</title>

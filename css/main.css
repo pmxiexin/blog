@@ -882,6 +882,9 @@ pre .javascript .function {
   border-top: 3px solid transparent;
   border-left: 1px solid transparent;
   border-right: 1px solid transparent;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+  transition-delay: 0s;
 }
 @media (max-width: 413px) {
   .post-body .tabs ul.nav-tabs li.tab {
@@ -1609,7 +1612,7 @@ pre .javascript .function {
 }
 .posts-expand .post-eof {
   display: block !important;
-  margin: 30px auto 60px;
+  margin: 30px auto 0px;
   width: 100%;
   height: 1px;
   background: #eee;
@@ -1617,11 +1620,11 @@ pre .javascript .function {
 }
 .post:last-child .post-eof.post-eof.post-eof {
   display: none;
-  margin-top: 30px;
+  margin: 30px auto 0px;
 }
 .post:last-child .post-footer.post-footer.post-footer {
   display: none;
-  margin-top: 30px;
+  margin: 30px auto 0px;
 }
 .post-gallery {
   display: table;
@@ -1838,7 +1841,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #96ffb9;
+  background: #9dbdff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3195,4 +3198,24 @@ pre .javascript .function {
 }
 .post-toc ol a {
   color: #999;
+}
+.post-toc .nav .active-current > a:hover {
+  color: #000;
+}
+.pagination {
+  box-shadow: 0 0px 0px 0 rgba(0,0,0,0);
+}
+.pagination .prev,
+.pagination .next,
+.pagination .page-number {
+  border: 0px solid #fff;
+}
+.pagination .prev:hover,
+.pagination .next:hover,
+.pagination .page-number:hover {
+  border: 0px solid #555;
+  background: #f9f9f9;
+}
+.pagination .page-number.current {
+  background: #555;
 }

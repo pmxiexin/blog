@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="产品系统分析通过产品内在分析来寻找优化点。有以下两种分析思路。 树状分析法通过从用户出发，分析用户可能碰到的任何情况和需求和解决方案。分为三个阶段：目标分析、需求分析 和 方案分析。 目标分析分析所需目标，明确目的和优先级  与上级商议期望目标内容 罗列所有期望目标 将目标进行关联，如拉新类、增长类、营收类、留存类，并在这基础上进行同级联想和下级扩展 获得树状目标分析图，以”总目标 - 大目标 -">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何改进&amp;分析产品">
+<meta property="og:url" content="http://pmxiexin.com/2018/12/30/如何改进-分析产品/index.html">
+<meta property="og:site_name" content="谢鑫的产品心得">
+<meta property="og:description" content="产品系统分析通过产品内在分析来寻找优化点。有以下两种分析思路。 树状分析法通过从用户出发，分析用户可能碰到的任何情况和需求和解决方案。分为三个阶段：目标分析、需求分析 和 方案分析。 目标分析分析所需目标，明确目的和优先级  与上级商议期望目标内容 罗列所有期望目标 将目标进行关联，如拉新类、增长类、营收类、留存类，并在这基础上进行同级联想和下级扩展 获得树状目标分析图，以”总目标 - 大目标 -">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-12-30T12:54:37.488Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="如何改进&amp;分析产品">
+<meta name="twitter:description" content="产品系统分析通过产品内在分析来寻找优化点。有以下两种分析思路。 树状分析法通过从用户出发，分析用户可能碰到的任何情况和需求和解决方案。分为三个阶段：目标分析、需求分析 和 方案分析。 目标分析分析所需目标，明确目的和优先级  与上级商议期望目标内容 罗列所有期望目标 将目标进行关联，如拉新类、增长类、营收类、留存类，并在这基础上进行同级联想和下级扩展 获得树状目标分析图，以”总目标 - 大目标 -">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://pmxiexin.com/2018/12/30/如何改进-分析产品/">
+
+
+
+
+
+  <title>如何改进&分析产品 | 谢鑫的产品心得</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">谢鑫的产品心得</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">谢鑫的产品心得123</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-calendar"></i> <br>
+            
+            时间线
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-plan">
+          <a href="/plan" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-list-ol"></i> <br>
+            
+            待写文章
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://pmxiexin.com/2018/12/30/如何改进-分析产品/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="谢鑫">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="谢鑫的产品心得">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">如何改进&分析产品</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-30T20:54:36+08:00">
+                2018-12-30
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  2.4k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  7
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="产品系统分析"><a href="#产品系统分析" class="headerlink" title="产品系统分析"></a>产品系统分析</h2><p>通过产品内在分析来寻找优化点。有以下两种分析思路。</p>
+<h3 id="树状分析法"><a href="#树状分析法" class="headerlink" title="树状分析法"></a>树状分析法</h3><p>通过从用户出发，分析用户可能碰到的任何情况和需求和解决方案。<br>分为三个阶段：目标分析、需求分析 和 方案分析。</p>
+<h4 id="目标分析"><a href="#目标分析" class="headerlink" title="目标分析"></a>目标分析</h4><p>分析所需目标，明确目的和优先级</p>
+<ol>
+<li>与上级商议期望目标内容</li>
+<li>罗列所有期望目标</li>
+<li>将目标进行关联，如拉新类、增长类、营收类、留存类，并在这基础上进行同级联想和下级扩展</li>
+<li>获得树状目标分析图，以”总目标 - 大目标 - 小目标“的格式呈现，如”提高营收 - 提高大R营收 - 增强比赛竞猜氛围“</li>
+<li>将目标进行优先级排序</li>
+</ol>
+<h4 id="需求分析"><a href="#需求分析" class="headerlink" title="需求分析"></a>需求分析</h4><ol>
+<li>根据“用户 -  特征 - 场景 - 心理  - 需求”来处理完成需求树状结构分析图。并选取其中优先级更高的需求，进入方案分析阶段。如“家庭主妇 - 负责家庭开销 - 网上购物 - 省钱 - 找到同一商品价格最低的“。</li>
+<li>分析内容：<ol>
+<li>用户：当前产品主要存在的用户分类，如“家庭主妇”、“学生”</li>
+<li>特征：该用户所存在的主要特征，如“家庭主妇需操劳家庭日常开销”</li>
+<li>场景：该特征主要发生的场景，含线上/线下。如“搜索商品时”等</li>
+<li>心理：该场景所引发出的心理情况，如“想要省钱”、“担心麻烦”等</li>
+<li>需求：在该场景、该心理下用户的需求内容</li>
+</ol>
+</li>
+<li>分析结果：<ol>
+<li>完成需求树状分析图</li>
+<li>对需求进行优先级排序</li>
+</ol>
+</li>
+</ol>
+<h4 id="方案分析"><a href="#方案分析" class="headerlink" title="方案分析"></a>方案分析</h4><ol>
+<li>选取重要的需求进行方案分析，有以下两种分析路径<ol>
+<li>基于目标：根据”需求 - 目标 - 解决方案 “完成方案树状结构分析图。如”找到同一商品价格最低的 - 促进用户购买 - 高亮价格最低的商品“</li>
+<li>基于问题：根据”需求 - 当前用户行为 - 当前存在的问题 - 解决方案“完成方案树状结构分析图。如”找到同一商品价格最低的 - 用户通过价格降序 - 价格最低的不一定靠谱 - 价格最低的基础上加上系统推荐“</li>
+</ol>
+</li>
+<li>分析内容<ol>
+<li>目标：针对用户的需求可实现的目标</li>
+<li>当前用户行为：在目前的情况下，当前用户会怎么满足需求</li>
+<li>当前存在的问题：用户当前满足需求的方式中的不方便之处</li>
+<li>解决方案：当前用户针对该问题的处理方案</li>
+</ol>
+</li>
+<li>方案结果：<ol>
+<li>完成方案树状分析图</li>
+<li>对方案进行优先级排序</li>
+</ol>
+</li>
+</ol>
+<h3 id="从问题出发（发散收敛法，头脑风暴）"><a href="#从问题出发（发散收敛法，头脑风暴）" class="headerlink" title="从问题出发（发散收敛法，头脑风暴）"></a>从问题出发（发散收敛法，头脑风暴）</h3><p>日常中会碰到大量的问题，由问题出发，通过归纳和总结是否存在同质性问题，从而一一化解。<br>分析思路从具体的需求出发，通过大量的体验来获得问题。将问题进行归纳、发散后整理需求为优化点。</p>
+<ul>
+<li>发散：通过大量的体验，记录所有碰到的问题，以及相应的解决方案。</li>
+<li>收敛：将已碰到的问题进行归纳总结，如“缺少曝光”</li>
+<li>再发散：将已归类的结果重新发散，看是否存在同质性问题，如“是否还有其他场景缺少曝光”，以及每个问题的解决放哪。</li>
+<li>再收敛：整理所有问题，思考所有问题中，是否有解决方案的通用性。并整理优先级，将当前最主要的需求作为突破点。</li>
+</ul>
+<h2 id="调研分析"><a href="#调研分析" class="headerlink" title="调研分析"></a>调研分析</h2><p>调研分析是指通过寻找外部信息，来辅助个人决策的方式。分为以下三种调研方式</p>
+<h3 id="访谈调研"><a href="#访谈调研" class="headerlink" title="访谈调研"></a>访谈调研</h3><p>通过与需求相关人士进行访谈收集信息，有以下访谈的的方案</p>
+<ol>
+<li>访谈范围<ol>
+<li>用户：需求的受众方，比如“竞猜用户”等。（注意：所有一线产品都需要有数个熟悉的用户，他们会帮你做决策）</li>
+<li>运营等：需求的实际操作者，如运营，客服，商务等，往往他们离用户最贴近，最了解用户。可以问问运营线上的使用状况是否满意，是否符合运营推广基础；问问客服用户都会提出什么样的疑问，有没有什么常见的未满足的需求；问问商务当前是否有足够的曝光位，是否符合商务推广需要。</li>
+<li>朋友：尽可能寻找更多人群征询意见。可以问问朋友对产品的第一印象如何，简单把玩后是否有体验不足之处；问问专业的朋友他们对该产品的看法以及独到的见解。</li>
+</ol>
+</li>
+<li>访谈渠道<ol>
+<li>即时沟通：适合与用户深度沟通，不尴尬又可持续的沟通方式。</li>
+<li>电话沟通：适合广泛的向用户征询意见的用户调研方式。</li>
+<li>当面沟通：适合与公司内的运营同事等，或者熟悉的朋友</li>
+</ol>
+</li>
+<li>访谈内容：<ol>
+<li>对产品的印象和使用问题：对所有人都适合那么问</li>
+<li>对某个具体问题的看法：适合与熟悉的用户、同事、朋友沟通</li>
+<li>对某件事情的反应：适合对用户，问用户在某种情况下，会做出什么样的结果，通过实际的结果来佐证自己的决策。</li>
+<li>回忆性内容：适合对用户，根据用户的历史情况，询问为什么会在当时做出那样的决策。</li>
+</ol>
+</li>
+<li>访谈技巧<ol>
+<li>访谈概要：在访谈前需制定访谈计划，访谈计划包含以下内容<ol>
+<li>背景：为什么要进行这次访谈</li>
+<li>目标：访谈想要达成什么样的结果</li>
+<li>步骤：根据什么样的步骤进行访谈</li>
+<li>内容：问什么样的问题，先问什么后问什么，若用户回答什么则需问什么等等</li>
+</ol>
+</li>
+<li>结果整理：对所有的访谈都需整理表格，分为数值整理和观点整理。</li>
+<li>录音：若是电话沟通则需录音， 方便后续反复琢磨</li>
+</ol>
+</li>
+</ol>
+<h3 id="竞品分析"><a href="#竞品分析" class="headerlink" title="竞品分析"></a>竞品分析</h3><p>竞品分析是指，通过竞品等其他产品的现状，来辅助个人决策的方式。<br>竞品分析分以下几个层次，此处引用用户体验要素的相关概念：</p>
+<ol>
+<li>战略层：<ol>
+<li>整体体验产品，寻找产品最核心满足的一两个需求</li>
+<li>用一句话概括产品的目标，并整理产品的背景、边界</li>
+</ol>
+</li>
+<li>范围层：<ol>
+<li>在产品所满足的所有需求中，选取最核心的需求。</li>
+<li>主观判断：以“用户 - 特征 - 心理  - 场景 - 目标- 现有的问题 - 解决方案”的格式来表达每个需求的背景和方案（生成树状图）</li>
+<li>客观分析：通过产品客观表现分析产品状态，如UGC更新频次表现用户活跃度等</li>
+</ol>
+</li>
+<li>结构层：<ol>
+<li>反复体验每个需求的流程，代入“用户 - 特征- 心理 - 场景”</li>
+<li>体验完成目标的过程，记录下“不流畅”的点</li>
+<li>评价该产品是否满足了核心需求，以及有哪些存在问题之处。</li>
+</ol>
+</li>
+<li>框架层：<ol>
+<li>整理该流程相关的所有页面</li>
+<li>体验每个页面上任意按钮的点击，任意弹层的展开，任意文本的说明</li>
+<li>整理所有界面中不合理之处</li>
+</ol>
+</li>
+<li>表现层：<ol>
+<li>看氛围：代入场景，看当前界面烘托分为是否符合目标受众</li>
+<li>看风格：看界面中每个元素，是否都风格一致</li>
+<li>看内容：代入场景，思考当打开该页面时，应当的阅读顺序，再反复体验，看是否界面的阅读顺序符合心理预期</li>
+<li>看细节：细节上仔细观察，看是否存在逻辑硬伤</li>
+</ol>
+</li>
+</ol>
+<h3 id="数据分析"><a href="#数据分析" class="headerlink" title="数据分析"></a>数据分析</h3><p>数据分析是指，通过客观的数据表现，来辅助个人决策的方式<br>数据分析有以下内容</p>
+<ol>
+<li>用以预测：通过竞品或当前相似业务的数据表现，预测另一业务的数据表现，如<ul>
+<li>通过竞品每个主播视频观看量，以预测自己主播的视频观看量</li>
+<li>通过竞品每个UV创造的流水，以预测自己UV所创造的流水</li>
+</ul>
+</li>
+<li>用以数值设定：根据竞品数据或历史数据，调整数值设定，如<ul>
+<li>通过收礼数、观看数、发言数的数值，调整人气值设定规则</li>
+<li>通过历史用户送礼情况，来调整会员的等级规则</li>
+</ul>
+</li>
+<li>用以判断：根据竞品或历史数据，帮助判断方案，如<ul>
+<li>通过A/B两种方案的数据表现，用以决定最终方案</li>
+<li>通过当前付费额占比情况，用以决定是先做A，还是先做B</li>
+</ul>
+</li>
+<li>用以反馈：通过历史数据，反馈线上功能是否符合预期，如<ul>
+<li>通过“高额用户续费率”，来反馈“贵族功能”是否符合预期</li>
+<li>通过“低额用户活跃程度”，来反馈“粉丝体系”是否符合预期</li>
+<li>通过“风控成功率”，来反馈当前风控机制是否合理</li>
+</ul>
+</li>
+</ol>
+
+      
+    </div>
+    
+    
+    
+    
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/12/30/原型图绘制技巧/" rel="next" title="原型图绘制技巧">
+                <i class="fa fa-chevron-left"></i> 原型图绘制技巧
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/12/30/会议沟通流程-方法/" rel="prev" title="会议沟通流程&方法">
+                会议沟通流程&方法 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.gif" alt="谢鑫">
+            
+              <p class="site-author-name" itemprop="name">谢鑫</p>
+              <p class="site-description motion-element" itemprop="description">测试测试测试</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">59</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:pmxiexin@163.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://pmxiexin.com/atom.xml" target="_blank" title="RSS">
+                      
+                        <i class="fa fa-fw fa-rss"></i>RSS</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#产品系统分析"><span class="nav-number">1.</span> <span class="nav-text">产品系统分析</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#树状分析法"><span class="nav-number">1.1.</span> <span class="nav-text">树状分析法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#目标分析"><span class="nav-number">1.1.1.</span> <span class="nav-text">目标分析</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#需求分析"><span class="nav-number">1.1.2.</span> <span class="nav-text">需求分析</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#方案分析"><span class="nav-number">1.1.3.</span> <span class="nav-text">方案分析</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#从问题出发（发散收敛法，头脑风暴）"><span class="nav-number">1.2.</span> <span class="nav-text">从问题出发（发散收敛法，头脑风暴）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#调研分析"><span class="nav-number">2.</span> <span class="nav-text">调研分析</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#访谈调研"><span class="nav-number">2.1.</span> <span class="nav-text">访谈调研</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#竞品分析"><span class="nav-number">2.2.</span> <span class="nav-text">竞品分析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据分析"><span class="nav-number">2.3.</span> <span class="nav-text">数据分析</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">谢鑫</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">博客全站共</span>
+    
+    <span title="Site words total count">70.7k 字</span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

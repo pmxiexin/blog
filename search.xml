@@ -32,8 +32,8 @@
         <category>经验总结</category>
       </categories>
       <tags>
-        <tag>持续更新</tag>
         <tag>沟通</tag>
+        <tag>持续更新</tag>
         <tag>推荐阅读</tag>
       </tags>
   </entry>
@@ -446,14 +446,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[火猫渠道资源及潜在合作方式]]></title>
-    <url>%2F2018%2F12%2F30%2F%E7%81%AB%E7%8C%AB%E6%B8%A0%E9%81%93%E8%B5%84%E6%BA%90%E5%8F%8A%E6%BD%9C%E5%9C%A8%E5%90%88%E4%BD%9C%E6%96%B9%E5%BC%8F%2F</url>
-    <content type="text"><![CDATA[原则：火猫以内容换流量，以流量换一切资源（变现、软文、技术支持）感悟：流量是互联网的硬通货，可以置换一切所需资源 曝光渠道（以内容换流量） 媒体曝光渠道：流量互换+互相吹捧 游久网 太平洋游戏网 直播观察 直播曝光渠道：火猫提供直播内容，合作方作为拉新渠道 微信电竞 WeGame QQ游戏 完美世界 Steam 视频曝光渠道：火猫提供视频内容，合作方作为拉新渠道 今日头条 优酷 业务合作渠道（流量变现） 广告渠道：火猫提供流量，合作方提供收益 福禄广告 Google Ad 基础业务渠道：火猫提供流量，合作方提供产品 小葫芦 Dotamax 竞猜业务渠道：火猫提供流量+运营，合作方提供技术支持 赢球帝 乐米彩票 大力电竞 析乐数据 支付渠道：火猫提供用户，合作方提供技术支持 微信支付 支付宝支付 快钱支付]]></content>
-      <categories>
-        <category>经验总结</category>
-      </categories>
-  </entry>
-  <entry>
     <title><![CDATA[直播技术框架说明]]></title>
     <url>%2F2018%2F12%2F30%2F%E7%9B%B4%E6%92%AD%E6%8A%80%E6%9C%AF%E6%A1%86%E6%9E%B6%E8%AF%B4%E6%98%8E%2F</url>
     <content type="text"><![CDATA[直播业务框架 推流技术框架 直播&amp;点播技术关系 火猫三方登录框架（以大力为例）]]></content>
@@ -463,6 +455,14 @@
       <tags>
         <tag>技术</tag>
       </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[火猫渠道资源及潜在合作方式]]></title>
+    <url>%2F2018%2F12%2F30%2F%E7%81%AB%E7%8C%AB%E6%B8%A0%E9%81%93%E8%B5%84%E6%BA%90%E5%8F%8A%E6%BD%9C%E5%9C%A8%E5%90%88%E4%BD%9C%E6%96%B9%E5%BC%8F%2F</url>
+    <content type="text"><![CDATA[原则：火猫以内容换流量，以流量换一切资源（变现、软文、技术支持）感悟：流量是互联网的硬通货，可以置换一切所需资源 曝光渠道（以内容换流量） 媒体曝光渠道：流量互换+互相吹捧 游久网 太平洋游戏网 直播观察 直播曝光渠道：火猫提供直播内容，合作方作为拉新渠道 微信电竞 WeGame QQ游戏 完美世界 Steam 视频曝光渠道：火猫提供视频内容，合作方作为拉新渠道 今日头条 优酷 业务合作渠道（流量变现） 广告渠道：火猫提供流量，合作方提供收益 福禄广告 Google Ad 基础业务渠道：火猫提供流量，合作方提供产品 小葫芦 Dotamax 竞猜业务渠道：火猫提供流量+运营，合作方提供技术支持 赢球帝 乐米彩票 大力电竞 析乐数据 支付渠道：火猫提供用户，合作方提供技术支持 微信支付 支付宝支付 快钱支付]]></content>
+      <categories>
+        <category>经验总结</category>
+      </categories>
   </entry>
   <entry>
     <title><![CDATA[活动运营常见问题]]></title>
@@ -591,8 +591,8 @@
         <category>经验总结</category>
       </categories>
       <tags>
-        <tag>技术</tag>
         <tag>沟通</tag>
+        <tag>技术</tag>
       </tags>
   </entry>
   <entry>
@@ -622,8 +622,8 @@
         <category>读书笔记</category>
       </categories>
       <tags>
-        <tag>心理学</tag>
         <tag>设计</tag>
+        <tag>心理学</tag>
       </tags>
   </entry>
   <entry>
@@ -634,8 +634,8 @@
         <category>读书笔记</category>
       </categories>
       <tags>
-        <tag>心理学</tag>
         <tag>设计</tag>
+        <tag>心理学</tag>
       </tags>
   </entry>
   <entry>
@@ -646,8 +646,8 @@
         <category>读书笔记</category>
       </categories>
       <tags>
-        <tag>心理学</tag>
         <tag>设计</tag>
+        <tag>心理学</tag>
       </tags>
   </entry>
   <entry>

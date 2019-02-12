@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="数据分析,">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="本文所写的数据分析，指在产品经理应该了解的部分。实际上数据分析博大精深，有专门的职业研究哦。 数据分析是什么数据分析是一种工具，和用户访谈、问卷调查一样，都是产品经理验证猜想、发现问题、寻找原因的方式。  验证猜想：验证数据预期是否和期望相符。若当做排行榜活动时的猜想是，才排行榜活动能让前20名主播收入提升150%。而活动开展后即可通过数据验证猜想是否准确 发现问题：产品上线后，除了来自于用户、同">
+<meta name="keywords" content="数据分析">
+<meta property="og:type" content="article">
+<meta property="og:title" content="产品经理的数据分析方法">
+<meta property="og:url" content="http://pmxiexin.com/2019/01/25/产品经理的数据分析方法/index.html">
+<meta property="og:site_name" content="许律周清">
+<meta property="og:description" content="本文所写的数据分析，指在产品经理应该了解的部分。实际上数据分析博大精深，有专门的职业研究哦。 数据分析是什么数据分析是一种工具，和用户访谈、问卷调查一样，都是产品经理验证猜想、发现问题、寻找原因的方式。  验证猜想：验证数据预期是否和期望相符。若当做排行榜活动时的猜想是，才排行榜活动能让前20名主播收入提升150%。而活动开展后即可通过数据验证猜想是否准确 发现问题：产品上线后，除了来自于用户、同">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-02-12T05:36:35.920Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="产品经理的数据分析方法">
+<meta name="twitter:description" content="本文所写的数据分析，指在产品经理应该了解的部分。实际上数据分析博大精深，有专门的职业研究哦。 数据分析是什么数据分析是一种工具，和用户访谈、问卷调查一样，都是产品经理验证猜想、发现问题、寻找原因的方式。  验证猜想：验证数据预期是否和期望相符。若当做排行榜活动时的猜想是，才排行榜活动能让前20名主播收入提升150%。而活动开展后即可通过数据验证猜想是否准确 发现问题：产品上线后，除了来自于用户、同">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://pmxiexin.com/2019/01/25/产品经理的数据分析方法/">
+
+
+
+
+
+  <title>产品经理的数据分析方法 | 许律周清</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">许律周清</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">产品的日思夜夜夜夜夜夜想</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-calendar"></i> <br>
+            
+            时间线
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-plan">
+          <a href="/plan" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-list-ol"></i> <br>
+            
+            待写文章
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://pmxiexin.com/2019/01/25/产品经理的数据分析方法/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="谢鑫">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="许律周清">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">产品经理的数据分析方法</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-25T13:35:00+08:00">
+                2019-01-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/职业技能/" itemprop="url" rel="index">
+                    <span itemprop="name">职业技能</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  2.6k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  8
+                </span> 分钟
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>本文所写的数据分析，指在产品经理应该了解的部分。实际上数据分析博大精深，有专门的职业研究哦。</p>
+<h2 id="数据分析是什么"><a href="#数据分析是什么" class="headerlink" title="数据分析是什么"></a>数据分析是什么</h2><p>数据分析是一种工具，和用户访谈、问卷调查一样，都是产品经理验证猜想、发现问题、寻找原因的方式。</p>
+<ol>
+<li>验证猜想：验证数据预期是否和期望相符。若当做排行榜活动时的猜想是，才排行榜活动能让前20名主播收入提升150%。而活动开展后即可通过数据验证猜想是否准确</li>
+<li>发现问题：产品上线后，除了来自于用户、同事直接反馈的问题外，更多的问题还需要产品自己寻找。寻找的途径之一即是数据。数据分析能帮助自己更好的发现问题。</li>
+<li>寻找原因：无论是验证猜想后的偏差，还是发现问题，最终都应落实到优化方案中去，而优化的前提是明确偏差/问题的原因。数据分析能帮助产品寻找蛛丝马迹。</li>
+</ol>
+<p>以湖面来举例子：<br>数据就像一个湖面，随着环境而波动；产品功能就像落入湖面的石子，会让湖面产生一圈圈涟漪；数据采集就像湖面上的白色纸船，随着湖面的波动而上下变化。产品经理远远地通过对白色纸船的观察来推测自己投的石子落在哪了。</p>
+<ol>
+<li>验证猜想：产品经理做功能就像在湖面里投石子，投之前就可以猜测湖面上纸船的变化（即数据的变化），投之后通过观察纸船的移动来验证自己的猜测。</li>
+<li>发现问题：湖面的波动往往难以观察，但是一旦发现纸船的不规则移动，就知道一定存在着什么东西，影响了湖面。</li>
+<li>寻找原因：不同影响湖面的方式，都会造成不一样的结果。比如风不仅会让纸船摇摆，还会统一地把纸船往一个方向吹；再比如石子，会让周围的纸船发散式的挪开。观察纸船的变化，就可以猜测可能的原因，比如如果纸船都往一个方向动，可能就是吹了阵风。</li>
+</ol>
+<h2 id="数据分析的流程"><a href="#数据分析的流程" class="headerlink" title="数据分析的流程"></a>数据分析的流程</h2><ol>
+<li>提出猜想：根据活动/功能的规则，在方案立项前提出自己的假设。</li>
+<li>验证猜想：方案上线后，验证自己的猜想是否正确。保持“提出-验证”的习惯，能帮助自己不断纠正自己的预判能力。</li>
+<li>发现问题：通过数据报表、用户反馈等方式，找到“问题”。</li>
+<li>寻找原因：通过数据分析、问卷调查等方式，寻找“问题”出现的原因。</li>
+<li>解决问题：通过产品迭代、人员优化等方式，解决“问题”<br>下文将详细说明每个流程的内容。</li>
+</ol>
+<h3 id="提出猜想"><a href="#提出猜想" class="headerlink" title="提出猜想"></a>提出猜想</h3><h4 id="猜想为什么重要"><a href="#猜想为什么重要" class="headerlink" title="猜想为什么重要"></a>猜想为什么重要</h4><p>产品经理是非常依赖于直觉，通常被称作“产品感”或“数据敏感度”。这种直觉能快速地做出决策，快速的寻找问题，堪称工作中的万金油。但不同的人直觉先天的层次不齐，而培养直觉的方式即是通过“猜想-验证”循环，来打造自己的认知体系。<br>这样举例：一个产品如果做过1次排行榜活动，如果有所总结，就能大概了解到排行榜活动的条件、作用、弊端等。第2次再做排行榜活动，就能大概估计这次活动的效用。长此以往，对于任何的排行榜活动，他都能心中有数。有些人这个过程长有些人短，长短依赖于“每一次活动沉淀的内容”。这个内容就是通过“猜想-验证”来完成的。</p>
+<h4 id="怎么猜想"><a href="#怎么猜想" class="headerlink" title="怎么猜想"></a>怎么猜想</h4><p>产品的猜想，是持续在完成产品方案的过程中的。<br>任何的细节都可以猜想，必须有些产品在页面上画一个按钮，只是竞品画了同一个按钮，并没任何设想。但是聪明的产品会去想，这样的按钮好吗？需要有个动画吗？动画能增加20%的点击量吗？<br>多次实验后，他会总结发现“跳动的按钮比静态的按钮多50%的点击量”之类的阶段。这就是沉淀。</p>
+<h4 id="猜想的流程"><a href="#猜想的流程" class="headerlink" title="猜想的流程"></a>猜想的流程</h4><ol>
+<li>寻找有价值的指标：根据活动设定KPI去拆分子项指标。如KPI是收入时：<ol>
+<li>按照价值区分，如高净值用户和低净值用户；</li>
+<li>按照属性区分，如DOTA2用户，LOL用户；</li>
+<li>按照流程区分，如登录率、打开活动页率、发起付费率、付费成功率等。</li>
+</ol>
+</li>
+<li>关注活动规则/物料对指标的影响：将活动规则择出影响规则的因素，与指标进行匹配，根据历史数据进行猜想，以排行榜活动举例：<ol>
+<li>规则内容：“根据用户送礼金额排行，排行榜显示前10名，其中前3名用户获得奖励，每天24点更新”。</li>
+<li>影响因素：“送礼金额排行”、“显示前10名”、“前3名获得奖励”、“每天24点更新”。</li>
+<li>与指标进行匹配猜想，如“显示前10名”：<ol>
+<li>将会提升30%高净值用户（前20名）的送礼金额。提升10%低净值用户的送礼。因为Balabalala</li>
+<li>对DOTA2用户能提升20%，对CSGO用户能提升10%。因为Balabala</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>检查猜想，猜想需满足那么几个条件：<ol>
+<li>可被验证的：难以被验证的设想，不划算。比如“排行榜活动能让主播依赖性更强”，但主播依赖性是一个很难以验证的指标。</li>
+<li>有疑惑的：不说正确的废话。比如“排行榜活动能带来累计注册量的提升”——啥都不做累计注册量也会涨。</li>
+<li>有价值的：被猜想后的结论能提升核心指标，为下次所用。而有些猜想验证后并无价值，比如“排行榜活动能让用户pv提升”，但pv提升对于该产品并无价值。</li>
+<li>具体的：猜想需要具体而明确，一旦存在模糊的解释。人天然的倾向为自己找借口“我又猜对了”。所以拒绝一切模糊的词语如“大概”、“轻微”等词语，提供准确和明确的定义。</li>
+</ol>
+</li>
+</ol>
+<h3 id="验证猜想"><a href="#验证猜想" class="headerlink" title="验证猜想"></a>验证猜想</h3><p>光提出猜想，就已经很好了。至少能让产品能够在活动开始前就有充分的预期。但猜想没得到验证，并无法提高自己的直觉。验证猜想才能纠正自己过去的思考偏差，帮助下一次更好的预测。<br>猜想如设立的正确，验证猜想只是跑跑跑相关数据，探囊取物般方便。<br><em>但注意的是，猜想正确固然高兴，但是猜想错误才能提升自己的直觉。如果验证的猜想全是对的，那应该反思一下，自己是不是在提出猜想的时候就有问题，猜想都太简单了。</em></p>
+<h3 id="发现问题"><a href="#发现问题" class="headerlink" title="发现问题"></a>发现问题</h3><h4 id="为什么要发现问题"><a href="#为什么要发现问题" class="headerlink" title="为什么要发现问题"></a>为什么要发现问题</h4><p>通过提出猜想和验证猜想，只能帮助你找到预期中的问题。<br>但是还有大量预期范围外的问题，但往往这些能帮助你找到一些意料之外的点。局座曾经说过，在现代战争中“暴露意味着打击”，一旦问题能够暴露出来，往往都能找到解决之处。<br>以直播为例，发现一些用户平时基本只到月底才消费，而且每个月固定的都消费给一个主播。经过调查才发现，原来这是主播自己的小号，通过自己给自己刷礼物达到业绩要求才能拿到奖金。</p>
+<h4 id="发现问题的方式"><a href="#发现问题的方式" class="headerlink" title="发现问题的方式"></a>发现问题的方式</h4><p>发现问题包括用户访谈、用户反馈、异常监控等等。此处只说明如何单纯地通过数据去寻找问题。先拟数据报告（可参考本人《如何写数据报告》一文），然后通过观察数据报告发现问题，一般有三种方式：</p>
+<ol>
+<li>特殊点：如最大点、最小点、转折点。每一个点都有其背后的原因。比如为什么X月X日收入达到峰值？</li>
+<li>单一数值变化：如升降关系，比如为什么X月全月收入先升后降？</li>
+<li>多个数值间的关联：多个数值间升降关系，是否存在着同时或相反的趋势。比如为什么收入增长的同时，ARPU值却下降了。</li>
+</ol>
+<h3 id="寻找原因"><a href="#寻找原因" class="headerlink" title="寻找原因"></a>寻找原因</h3><p>寻找原因也是通过“猜想-验证”的方式。<br>先为找到的问题，提供任何能想到的理由，然后再依次寻找途径去验证每一个理由是否成立。举例如下：</p>
+<ol>
+<li>问题：昨天新增100个贵族用户。</li>
+<li>可能的原因：<ol>
+<li>主播的大日子，比如新主播入驻、生日、结婚等：通过检查这100个贵族开通的直播间和时间校验理由是否成立。</li>
+<li>运营的强引导，比如贵族活动等：通过询问运营同学是否存在运营引导。</li>
+<li>……<br>通过以上的依次分析，可以找到每一个问题的原因所在。</li>
+</ol>
+</li>
+</ol>
+<h3 id="解决问题"><a href="#解决问题" class="headerlink" title="解决问题"></a>解决问题</h3><p>通过验证猜想和寻找原因，可以找到本次活动中，与预期偏差之处。<br>通过产品或运营的途径解决。这里不再描述。</p>
+<h2 id="小建议"><a href="#小建议" class="headerlink" title="小建议"></a>小建议</h2><ol>
+<li>产品经理应当学学SQL，但重点并不在于精通SQL的语法，而是通过对SQL的学习能够增强自己对于数据的描述和理解。新手产品甚至对于自己想要的数据都描述不清。学完SQL后，自己想要什么，开发能提供什么，都会了然于胸，对于数据分析更加方便。</li>
+<li>产品也应该学学Excel，但不用追求把Excel功能都学一遍（也基本不可能），学习常用的一些语法，比如MATCH、IF等等即可。简单的语法通过合理的应用就能完成大多数工作。</li>
+</ol>
+
+      
+    </div>
+    
+    
+    
+    
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/数据分析/" rel="tag"><i class="fa fa-tag"></i> 数据分析</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/01/24/如何判断需求优先级/" rel="next" title="如何判断需求优先级">
+                <i class="fa fa-chevron-left"></i> 如何判断需求优先级
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/01/27/产品中间件/" rel="prev" title="产品中间件">
+                产品中间件 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.png" alt="谢鑫">
+            
+              <p class="site-author-name" itemprop="name">谢鑫</p>
+              <p class="site-description motion-element" itemprop="description">像小鹿蹦跶的冲下愚昧之巅</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">84</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:pmxiexin@163.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://pmxiexin.com/atom.xml" target="_blank" title="RSS">
+                      
+                        <i class="fa fa-fw fa-rss"></i>RSS</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#数据分析是什么"><span class="nav-number">1.</span> <span class="nav-text">数据分析是什么</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据分析的流程"><span class="nav-number">2.</span> <span class="nav-text">数据分析的流程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#提出猜想"><span class="nav-number">2.1.</span> <span class="nav-text">提出猜想</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#猜想为什么重要"><span class="nav-number">2.1.1.</span> <span class="nav-text">猜想为什么重要</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#怎么猜想"><span class="nav-number">2.1.2.</span> <span class="nav-text">怎么猜想</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#猜想的流程"><span class="nav-number">2.1.3.</span> <span class="nav-text">猜想的流程</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#验证猜想"><span class="nav-number">2.2.</span> <span class="nav-text">验证猜想</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#发现问题"><span class="nav-number">2.3.</span> <span class="nav-text">发现问题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#为什么要发现问题"><span class="nav-number">2.3.1.</span> <span class="nav-text">为什么要发现问题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#发现问题的方式"><span class="nav-number">2.3.2.</span> <span class="nav-text">发现问题的方式</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#寻找原因"><span class="nav-number">2.4.</span> <span class="nav-text">寻找原因</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解决问题"><span class="nav-number">2.5.</span> <span class="nav-text">解决问题</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#小建议"><span class="nav-number">3.</span> <span class="nav-text">小建议</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">谢鑫</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">博客全站共</span>
+    
+    <span title="Site words total count">121.3k 字</span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

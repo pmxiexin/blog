@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="推荐阅读,行业思考,">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="自己是做直播平台的，分析一下我对于平台的理解。 平台是什么平台是中介，连接生产者和消费者。平台存在的前提在于信息不对称，这种不对称降低了商品流通的效率，而平台存在的价值即是提高效率。传统行业的平台就是商场。对于生产者而言，并不知道哪些用户需要买东西；对于消费者而言，也并不明确自己想要什么。所以商场作为平台的意义就在于让生产者和消费者碰个面，大家都知道以后想买/卖东西到我这就好了。反之如果生产者很明">
+<meta name="keywords" content="推荐阅读,行业思考">
+<meta property="og:type" content="article">
+<meta property="og:title" content="我对平台产品的理解">
+<meta property="og:url" content="http://pmxiexin.com/2019/01/29/我对平台产品的理解/index.html">
+<meta property="og:site_name" content="许律周清">
+<meta property="og:description" content="自己是做直播平台的，分析一下我对于平台的理解。 平台是什么平台是中介，连接生产者和消费者。平台存在的前提在于信息不对称，这种不对称降低了商品流通的效率，而平台存在的价值即是提高效率。传统行业的平台就是商场。对于生产者而言，并不知道哪些用户需要买东西；对于消费者而言，也并不明确自己想要什么。所以商场作为平台的意义就在于让生产者和消费者碰个面，大家都知道以后想买/卖东西到我这就好了。反之如果生产者很明">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-02-12T05:30:16.878Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="我对平台产品的理解">
+<meta name="twitter:description" content="自己是做直播平台的，分析一下我对于平台的理解。 平台是什么平台是中介，连接生产者和消费者。平台存在的前提在于信息不对称，这种不对称降低了商品流通的效率，而平台存在的价值即是提高效率。传统行业的平台就是商场。对于生产者而言，并不知道哪些用户需要买东西；对于消费者而言，也并不明确自己想要什么。所以商场作为平台的意义就在于让生产者和消费者碰个面，大家都知道以后想买/卖东西到我这就好了。反之如果生产者很明">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://pmxiexin.com/2019/01/29/我对平台产品的理解/">
+
+
+
+
+
+  <title>我对平台产品的理解 | 许律周清</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">许律周清</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">产品的日思夜夜夜夜夜夜想</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-calendar"></i> <br>
+            
+            时间线
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-plan">
+          <a href="/plan" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-list-ol"></i> <br>
+            
+            待写文章
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://pmxiexin.com/2019/01/29/我对平台产品的理解/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="谢鑫">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="许律周清">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">我对平台产品的理解</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-29T13:21:00+08:00">
+                2019-01-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/产品漫想/" itemprop="url" rel="index">
+                    <span itemprop="name">产品漫想</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1.9k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  6
+                </span> 分钟
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>自己是做直播平台的，分析一下我对于平台的理解。</p>
+<h2 id="平台是什么"><a href="#平台是什么" class="headerlink" title="平台是什么"></a>平台是什么</h2><p>平台是中介，连接生产者和消费者。平台存在的前提在于信息不对称，这种不对称降低了商品流通的效率，而平台存在的价值即是提高效率。<br>传统行业的平台就是商场。对于生产者而言，并不知道哪些用户需要买东西；对于消费者而言，也并不明确自己想要什么。所以商场作为平台的意义就在于让生产者和消费者碰个面，大家都知道以后想买/卖东西到我这就好了。反之如果生产者很明确谁喜欢什么，消费者很明确自己要什么，互相打个电话就好了，也无需有商场的存在。<br>不过还真有生产者能解决信息不对称，依靠的是品牌号召力和忠臣度，用户很明确地想找自己，自己天然就是流量，当然就无需依托于平台啦，比如苹果店、沃尔玛等。</p>
+<p>正因为上文对平台的描述，所以一般平台具有这几个特征：</p>
+<ol>
+<li>长尾市场或地理区隔市场：正是因为用户喜好的差异和地理限制，才造成了信息的不对称性，所以才有平台的产生。</li>
+<li>易形成规模效应：平台的初期建设往往成本巨大，但一旦建设完成就可依靠规模效应降低边际成本，甚至形成垄断。（大多数平台都是赢家通吃市场）</li>
+</ol>
+<h2 id="平台的作用"><a href="#平台的作用" class="headerlink" title="平台的作用"></a>平台的作用</h2><p>在平台产生前，生产者和消费者之间的接触是无序且不成规模的。使得生产者无法扩大规模，而消费者的需求无法得到满足。<br>平台能够将生产者和消费者聚集在一起，会产生以下作用：</p>
+<h3 id="生产者-创造更好的商品-消费者——提高消费水平"><a href="#生产者-创造更好的商品-消费者——提高消费水平" class="headerlink" title="生产者-创造更好的商品/消费者——提高消费水平"></a>生产者-创造更好的商品/消费者——提高消费水平</h3><p>众多生产者的商品都让消费者看到，生产者之间能够相互竞争。从而生产者进行优胜劣汰，优秀的生产者扩大生产规模，提高生产效率，形成品牌。而消费者的需求能够获得满足，并且有更多的选择，降低消费成本，提高生活质量。<br>以商场举例，当没商场的时候，只有社区店，大家只能买到有限的东西，基本有啥就只能买啥，购买的商品也并不完全满意。但是当有商场以后，商品款式众多，消费者总能买到自己满意的商品，而不符合用户需求的生产者也会被淘汰，留下那些更优秀的生产者，成为品牌。<br>再以直播平台举例，当没直播平台的时候，玩家只能在各种零碎的渠道接触游戏主播，自己能找到的主播，也未必是自己最喜欢的。但是有直播平台以后，玩家能看各种各样的主播，总有自己满意的。从而更专业的主播脱颖而出，获得大量收益，没人看的主播逐渐淘汰。</p>
+<h3 id="平台——提高流通效率、规范市场行为"><a href="#平台——提高流通效率、规范市场行为" class="headerlink" title="平台——提高流通效率、规范市场行为"></a>平台——提高流通效率、规范市场行为</h3><p>平台的收入与消费者消费量有关。所以平台会尽可能的提高消费量，而能做的有以下事情：</p>
+<h4 id="提高流通效率"><a href="#提高流通效率" class="headerlink" title="提高流通效率"></a>提高流通效率</h4><p>生产者和消费者之间一定会存在着“信息不畅”，而这种“信息不畅”都会让一部分消费者无法购买到自己喜欢的东西，从而降低了消费量。平台会尽可能削减这样的“信息不畅”。<br>以商场举例，商场会在门口或是楼梯间清楚的标明哪个商店在哪个位置，因为一旦标的不够清晰，就会有用户买不到合适自己的东西。再以直播平台举例，直播平台有非常精准的用户喜好推荐，当你看了王者荣耀的主播，就会再首页显示其他王者荣耀的主播，希望你能进去看看。</p>
+<h4 id="维护市场秩序"><a href="#维护市场秩序" class="headerlink" title="维护市场秩序"></a>维护市场秩序</h4><p>市场行为一旦存在不规范，就会有生产者或消费者不满意。逐渐可能有生产者逐渐退出平台，或是消费者逐渐更换平台。这是平台所不能容忍的。所以平台会尽可能的保障生产者和消费者都是在规范的环境下安全的交易，从而保障自己的收入也是稳定的。<br>以商场举例，商场通常都有维权办公室，客户和商家一旦发生纠纷，就可在此进行沟通，保障双方的权益。再以直播平台举例，直播平台设置有监控，一方面防止用户有侮辱性词汇攻击主播，另一方面防止主播播放不适合观看的内容。</p>
+<h2 id="平台发展的阶段"><a href="#平台发展的阶段" class="headerlink" title="平台发展的阶段"></a>平台发展的阶段</h2><p>平台和<em>流量</em>相处方式的差异，就是各个阶段的差异</p>
+<h4 id="【早期】培育流量"><a href="#【早期】培育流量" class="headerlink" title="【早期】培育流量"></a>【早期】培育流量</h4><p>在平台创立的早期。生产方和产量和消费者的需求因为没有被完全市场化，所以并不对等。或是“流量不足”，或是“流量过多”。<br>一旦“流量不足”，则生产者的商品滞销，损害生产者热情，则这个时候需要进行用户补贴，尽可能的让用户都快速进来。比如商场刚开业时，通常需要进行大促销，通过让利来引入流量。<br>一旦“流量过多”，则用户需求无法得到满足，损害对平台的信任，则这个时候需要补贴生产者，产出更多的商品满足用户（其实一般也不用，生产者自己会闻着钱的味道过来）。比如外卖高速发展期时，大量用户外卖送货时效性差，则需要高薪招聘外卖员，满足用户需求。</p>
+<h4 id="【部分中期】抢占流量"><a href="#【部分中期】抢占流量" class="headerlink" title="【部分中期】抢占流量"></a>【部分中期】抢占流量</h4><p>平台创立的中期，通常商业模式已经固定。但是因为部分平台的特性就会形成规模效应，造成赢者通吃。所以该阶段平台需要快速扩张，抢占流量。一旦抢占了流量，生产者也会闻钱而来，形成规模效应，降低边际成本，从而胜过其他平台。<br>以直播平台举例，斗鱼早期大量补贴主播，进行大规模广告投放。快速烧钱抢占用户，从而成为直播行业领军平台。</p>
+<h4 id="【晚期】精准运营流量"><a href="#【晚期】精准运营流量" class="headerlink" title="【晚期】精准运营流量"></a>【晚期】精准运营流量</h4><p>平台晚期，流量稳定。没有新增用户带来的高速增长。此时则需要通过对流量的精准利用来提升收入。一般有两种做法：</p>
+<ol>
+<li>提升流通效率，优化流量配置：尽可能满足已有用户的各方面的需求，如上文所述的用户喜好推荐；以及将用户引导至收入大的地方，比如吧游戏观众导向秀场主播。</li>
+<li>进行流量转化，向上下游延伸：让已有的用户能够使用其他相关业务，是新的收入来源。比如斗鱼自己有合作的页游，让直播观众向页游导量，从而获得收入。</li>
+</ol>
+
+      
+    </div>
+    
+    
+    
+    
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/推荐阅读/" rel="tag"><i class="fa fa-tag"></i> 推荐阅读</a>
+          
+            <a href="/tags/行业思考/" rel="tag"><i class="fa fa-tag"></i> 行业思考</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/01/28/如何进行项目立项分析/" rel="next" title="如何进行项目立项分析">
+                <i class="fa fa-chevron-left"></i> 如何进行项目立项分析
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/01/30/2018年个人总结/" rel="prev" title="2018年个人总结">
+                2018年个人总结 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.png" alt="谢鑫">
+            
+              <p class="site-author-name" itemprop="name">谢鑫</p>
+              <p class="site-description motion-element" itemprop="description">像小鹿蹦跶的冲下愚昧之巅</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">84</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:pmxiexin@163.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://pmxiexin.com/atom.xml" target="_blank" title="RSS">
+                      
+                        <i class="fa fa-fw fa-rss"></i>RSS</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#平台是什么"><span class="nav-number">1.</span> <span class="nav-text">平台是什么</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#平台的作用"><span class="nav-number">2.</span> <span class="nav-text">平台的作用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#生产者-创造更好的商品-消费者——提高消费水平"><span class="nav-number">2.1.</span> <span class="nav-text">生产者-创造更好的商品/消费者——提高消费水平</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#平台——提高流通效率、规范市场行为"><span class="nav-number">2.2.</span> <span class="nav-text">平台——提高流通效率、规范市场行为</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#提高流通效率"><span class="nav-number">2.2.1.</span> <span class="nav-text">提高流通效率</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#维护市场秩序"><span class="nav-number">2.2.2.</span> <span class="nav-text">维护市场秩序</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#平台发展的阶段"><span class="nav-number">3.</span> <span class="nav-text">平台发展的阶段</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#【早期】培育流量"><span class="nav-number">3.0.1.</span> <span class="nav-text">【早期】培育流量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#【部分中期】抢占流量"><span class="nav-number">3.0.2.</span> <span class="nav-text">【部分中期】抢占流量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#【晚期】精准运营流量"><span class="nav-number">3.0.3.</span> <span class="nav-text">【晚期】精准运营流量</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">谢鑫</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">博客全站共</span>
+    
+    <span title="Site words total count">121.3k 字</span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

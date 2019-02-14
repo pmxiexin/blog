@@ -1841,7 +1841,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #7ceb1a;
+  background: #ed3e3d;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3218,4 +3218,12 @@ pre .javascript .function {
 }
 .pagination .page-number.current {
   background: #555;
+}
+.callMe {
+  color: #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.callme:hover {
+  color: #000;
+  border-bottom: 1px solid #999;
 }

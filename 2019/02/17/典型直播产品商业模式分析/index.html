@@ -1,0 +1,1340 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="推荐阅读,行业思考,">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="概述主播在直播平台上进行直播，用户以礼物的形式进行打赏，打赏收入由主播和直播平台进行分成，是典型的双边市场。由于直播产品具备着“流量大，同时在线人数高，但付费率低”的特征，所以商业模式以“流量转化”为核心。直播产品有三个参与者，用户、主播和平台，主要的参与方式如下  用户：观看直播，如令其满意可进行付费打赏。 主播：通过直播内容获得观众，并吸引主播打赏 平台：负责主播招募和基础功能搭建，以及用户的">
+<meta name="keywords" content="推荐阅读,行业思考">
+<meta property="og:type" content="article">
+<meta property="og:title" content="典型直播产品商业模式分析">
+<meta property="og:url" content="http://pmxiexin.com/2019/02/17/典型直播产品商业模式分析/index.html">
+<meta property="og:site_name" content="许律周清">
+<meta property="og:description" content="概述主播在直播平台上进行直播，用户以礼物的形式进行打赏，打赏收入由主播和直播平台进行分成，是典型的双边市场。由于直播产品具备着“流量大，同时在线人数高，但付费率低”的特征，所以商业模式以“流量转化”为核心。直播产品有三个参与者，用户、主播和平台，主要的参与方式如下  用户：观看直播，如令其满意可进行付费打赏。 主播：通过直播内容获得观众，并吸引主播打赏 平台：负责主播招募和基础功能搭建，以及用户的">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://i.loli.net/2019/02/18/5c69864ecb758.png">
+<meta property="og:updated_time" content="2019-02-17T16:15:46.647Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="典型直播产品商业模式分析">
+<meta name="twitter:description" content="概述主播在直播平台上进行直播，用户以礼物的形式进行打赏，打赏收入由主播和直播平台进行分成，是典型的双边市场。由于直播产品具备着“流量大，同时在线人数高，但付费率低”的特征，所以商业模式以“流量转化”为核心。直播产品有三个参与者，用户、主播和平台，主要的参与方式如下  用户：观看直播，如令其满意可进行付费打赏。 主播：通过直播内容获得观众，并吸引主播打赏 平台：负责主播招募和基础功能搭建，以及用户的">
+<meta name="twitter:image" content="https://i.loli.net/2019/02/18/5c69864ecb758.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://pmxiexin.com/2019/02/17/典型直播产品商业模式分析/">
+
+
+
+
+
+  <title>典型直播产品商业模式分析 | 许律周清</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">许律周清</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">产品的日思夜夜夜夜夜夜想</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-calendar"></i> <br>
+            
+            时间线
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-plan">
+          <a href="/plan" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-list-ol"></i> <br>
+            
+            待写文章
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://pmxiexin.com/2019/02/17/典型直播产品商业模式分析/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="谢鑫">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="许律周清">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">典型直播产品商业模式分析</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-17T00:04:00+08:00">
+                2019-02-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/经验总结/" itemprop="url" rel="index">
+                    <span itemprop="name">经验总结</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  2.5k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  8
+                </span> 分钟
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>主播在直播平台上进行直播，用户以礼物的形式进行打赏，打赏收入由主播和直播平台进行分成，是典型的双边市场。<br>由于直播产品具备着“流量大，同时在线人数高，但付费率低”的特征，所以商业模式以“流量转化”为核心。<br>直播产品有三个参与者，用户、主播和平台，主要的参与方式如下</p>
+<ol>
+<li>用户：观看直播，如令其满意可进行付费打赏。</li>
+<li>主播：通过直播内容获得观众，并吸引主播打赏</li>
+<li>平台：负责主播招募和基础功能搭建，以及用户的引入转化<br>以传统的“酒楼表演”来举例：用户是看客，看得开心了就打赏点钱； 主播是表演者，表演得好有更多人来看；平台是酒楼，招募表演者，也提供表演场地和瓜子板凳。<br><em>更多直播打赏类产品产品特征的分析可前往<a href="https://pmxiexin.com/2018/12/30/%E7%AB%9E%E7%8C%9C%E7%B1%BB%E4%B8%9A%E5%8A%A1%E6%80%BB%E7%BB%93%E5%88%86%E6%9E%90/">直播打赏类产品特性的分析</a></em></li>
+</ol>
+<h2 id="过程说明"><a href="#过程说明" class="headerlink" title="过程说明"></a>过程说明</h2><p><img src="https://i.loli.net/2019/02/18/5c69864ecb758.png" alt=""></p>
+<ol>
+<li>主播招募：获得直播内容，一般有这些内容：<ol>
+<li>职业主播：与个人主播或公会合作，以“签约”的形式招募主播，提供“基础薪酬”和“打赏分成”；</li>
+<li>非职业主播：部分普通用户希望赚点零花钱，自发开播。只有打赏分成收入，没有基础薪资，如效果好可能会被公会和平台招募；</li>
+<li>合作内容：如“DOTA2赛事直播”、“暴走大事件”视频轮播、“小米发布会”直播等，以商务合作形式获得直播内容。</li>
+</ol>
+</li>
+<li>流量引入：有最基本的内容后，需要引入观众，获得收入，有那么几种渠道<ol>
+<li>回访用户：留存的观看用户，需关注留存率</li>
+<li>搜索：通过搜索引擎来的用户，需关注SEO优化情况</li>
+<li>应用市场：通过应用市场搜索来的用户，需关注ASO优化情况</li>
+<li>广告：通过付费广告获取的用户，需关注付费成本</li>
+<li>流量合作：与合作方进行流量合作，进行资源互换，需关注合作渠道与自身平台的匹配度</li>
+<li>用户推荐：忠实用户向他人推荐获取的新用户，需关注用户口碑</li>
+</ol>
+</li>
+<li>访客流量转化：当用户来到平台后，最终需要变现。直接通过广告变现或是间接通过观看后的付费打赏变现，主要有那么几种流量转化方式<ol>
+<li>搜索渠道：用户通过站内搜索，到达直播间。一般都是“主播粉”和“赛事粉”用户，有明确的观看目的</li>
+<li>各级导航：用户通过站内导航，到达直播间。一般都有明确的观看习惯，比如看美女主播，看DOTA2主播，明星主播等</li>
+<li>喜好推荐：用户根据平台推荐，到达直播间。一般分为运营主动推荐和喜好分析推荐。</li>
+<li>【直接变现】广告计划：通过在页面各处埋有广告，可获得最基本的广告收入</li>
+<li>【直接变现】其他方式：其他通用的，能进行流量变现的方式，如竞猜小游戏、抓娃娃、游戏联运等</li>
+</ol>
+</li>
+<li>观众流量转化：用户进入直播间后，会一直停留在直播间观看，此时需要进行进一步的流量转化，有那么几种转化方向<ol>
+<li>忠诚度计划：将用户转化为忠实观众，持续性的访问平台，稳定贡献广告收入，也是付费打赏的潜在用户，一般通过等级、积分、奖励等方式刺激</li>
+<li>【直接变现】付费计划：将用户转化为付费用户，获得打赏收入。并将付费用户进一步提升为续费用户，获得二次打赏收入。主要依靠主播自身的吸金能力，其次平台需要提供礼物道具、特权等方式刺激</li>
+<li>分享计划：将用户转化为“分享用户”，能够将平台推荐给他人，从而进行低成本拉新。</li>
+</ol>
+</li>
+<li>收入反馈：以上过程已从流量来源到付费转化，下一步需将获得地收入进一步投入以实现规模化，一般有以下方式<ol>
+<li>补贴主播：通过调整主播基础薪酬、提供额外奖励的方式，使得更多的主播能够入驻直播平台，有更多的直播内容</li>
+<li>培训主播：对主播进行技能培训，提升主播创造直播内容和吸金的能力</li>
+<li>购买流量：将获得的收入投入SEO优化、ASO优化、广告、流量合作等方式，以获得更多的用户。</li>
+</ol>
+</li>
+</ol>
+<h2 id="火猫直播发展阶段及关注指标"><a href="#火猫直播发展阶段及关注指标" class="headerlink" title="火猫直播发展阶段及关注指标"></a>火猫直播发展阶段及关注指标</h2><ol>
+<li>阶段零：发现需求<ol>
+<li>阶段目标：发现了可进入的市场真正面临的、未能很好满足的需求</li>
+<li>核心指标：能够找打用户真正的痛点（即“用户想看游戏直播”）</li>
+<li>阶段结果：<ol>
+<li>发现Twitch（国外游戏直播平台）非常火爆，很多人愿意观看</li>
+<li>行业内还很少有DOTA2、CSGO相关的直播网站</li>
+<li>国内游戏视频行业火热，知名电竞选手人气升高<br><em>阶段零已被行业先行者验证，后来者直接从阶段一开始</em></li>
+</ol>
+</li>
+</ol>
+</li>
+<li>阶段一：移情阶段<ol>
+<li>阶段目标：找到了用户可接受，市场可允许的实现方式/重复他人已实现的实现方式</li>
+<li>核心指标：找到可重复的，可规模化的实现方式</li>
+<li>阶段结果：<ol>
+<li>发现了“签约主播、用户观看“的实现方式</li>
+<li>当知名玩家开直播时，很多用户愿意持续观看</li>
+<li>看直播成为很多用户打消无聊的第一选择</li>
+</ol>
+</li>
+<li>核心功能：<ol>
+<li>页面基础：能够将各个渠道来的用户成功的引导到直播间</li>
+<li>推流&amp;直播系统：能够将主播直播画面即时的显示给用户看</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>阶段二：粘性阶段<ol>
+<li>阶段目标：找到了正确的产品/特性/功能来留住用户</li>
+<li>阶段指标：<ol>
+<li>用户留存率，用户在次日/7日/30日是否还会回到直播平台</li>
+<li>日均观看数：每天每个用户会观看多少个主播</li>
+</ol>
+</li>
+<li>阶段结果：<ol>
+<li>强化直播时的互动参与，让用户对主播粘性更高</li>
+<li>通过推荐系统，让用户永远都有自己喜欢的直播可看</li>
+<li>通过用户忠诚度计划，以等级&amp;积分，消息推送方式留存用户</li>
+</ol>
+</li>
+<li>核心功能：<ol>
+<li>直播互动：用户和主播能够通过互动，用户更快成为主播粉</li>
+<li>喜好推荐：让用户能够每天流量更多主播，提高主播利用率</li>
+<li>消息推送：通过消息推送，提醒用户观看直播</li>
+<li>用户激励：能够通过等级、积分等方式维系用户停留</li>
+<li>体验优化：优化最基础的导流/观看体验</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>阶段三：病毒化阶段<ol>
+<li>阶段目标：用户和功能自然真正或非自然地刺激了增长</li>
+<li>阶段指标：<ol>
+<li>新用户增量：每天有多少新用户来到平台</li>
+<li>日均开播数：每天有多少的主播进行直播</li>
+</ol>
+</li>
+<li>阶段结果：<ol>
+<li>知名玩家id冠名，获取游戏内用户</li>
+<li>确定产品差异化策略，以赛事直播作为主打，吸引赛事用户</li>
+<li>高薪招聘知名主播，引起社会关注</li>
+</ol>
+</li>
+<li>核心功能：<ol>
+<li>容载扩大：提升产品能够支撑的容载量，避免因用户涌入而崩溃</li>
+<li>赛事体系：产品差异化策略的的功能，包括赛事中心、赛事专题等</li>
+<li>主播申请/主播后台：方便更多的主播入驻，提高主播工作满意度</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>阶段四：营收阶段（进行中）<ol>
+<li>阶段目标：从健康的生态系统中获得相应利润</li>
+<li>阶段指标：<ol>
+<li>收入额，通过各种营收渠道获得的收入量总和</li>
+<li>付费率：新用户成为付费用户的比例，提升付费率能提升整体收入</li>
+<li>ARPU：平均每个用户的付费额，提升ARPU能提升整体收入</li>
+</ol>
+</li>
+<li>阶段结果：<ol>
+<li>从传统秀场中找到了打赏的收入方式，一切互动向秀场靠近</li>
+<li>从体育直播中找到了直播广告的方式，开始有广告商的参与</li>
+<li>从体育竞猜中找到了点击竞猜的方式，直播植入竞猜互动</li>
+</ol>
+</li>
+<li>核心功能：<ol>
+<li>礼物打赏：用户充值后，送礼物打赏给主播的体验</li>
+<li>广告布局：在合适的位置布局广告，获得广告收入</li>
+<li>电竞竞猜：通过电竞竞猜，从赛事观看用户中获得收益</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>阶段五：规模化阶段（进行中）<ol>
+<li>阶段目标：提升效率，降低成本，利用体量产生规模化效应</li>
+<li>阶段指标：<ol>
+<li>获客成本：统计各个渠道来源用户的成本及转化率，减少拉新成本</li>
+<li>付费用户终身价值：提升一个付费用户在平台上累计创造的价值</li>
+<li>主播绩效：主播绩效考核，淘汰绩效差的主播</li>
+</ol>
+</li>
+<li>阶段结果：<ol>
+<li>更精细化的活动运营，各个付费群体都有针对性的运营活动</li>
+<li>开始有公会的产生，帮助培养主播，降低主播门槛和招聘成本</li>
+</ol>
+</li>
+<li>核心功能：<ol>
+<li>统计上报与展现后台：为精益化的数据分析提供基础</li>
+<li>平台活动：进行用户的精细化活动运营，提升收入指标</li>
+<li>迭代优化：优化历史遗留问题，提升各处体验</li>
+<li>主播绩效管理后台：查看和管理主播的绩效，更好的运营主播</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+
+      
+    </div>
+    
+    
+    
+    
+    <div>
+      
+        <div>
+    
+       <div style="text-align:center;color: #ccc;font-size:14px;margin-top: 60px;">感谢阅读！有什么想法么？
+       <a href="mailto:pmxiexin@163.com" class="callMe">来和我交流吧 &gt;</a></div>
+    
+</div>
+      
+    </div>
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/推荐阅读/" rel="tag"><i class="fa fa-tag"></i> 推荐阅读</a>
+          
+            <a href="/tags/行业思考/" rel="tag"><i class="fa fa-tag"></i> 行业思考</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/02/16/产品的发展阶段及目标/" rel="next" title="产品的发展阶段及目标">
+                <i class="fa fa-chevron-left"></i> 产品的发展阶段及目标
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/02/18/典型竞猜产品商业模式分析/" rel="prev" title="典型竞猜产品商业模式分析">
+                典型竞猜产品商业模式分析 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.png" alt="谢鑫">
+            
+              <p class="site-author-name" itemprop="name">谢鑫</p>
+              <p class="site-description motion-element" itemprop="description">像小鹿蹦跶的冲下愚昧之巅</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">88</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:pmxiexin@163.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://pmxiexin.com/atom.xml" target="_blank" title="RSS">
+                      
+                        <i class="fa fa-fw fa-rss"></i>RSS</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#概述"><span class="nav-number">1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#过程说明"><span class="nav-number">2.</span> <span class="nav-text">过程说明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#火猫直播发展阶段及关注指标"><span class="nav-number">3.</span> <span class="nav-text">火猫直播发展阶段及关注指标</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">谢鑫</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">博客全站共</span>
+    
+    <span title="Site words total count">132.4k 字</span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

@@ -1841,7 +1841,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #46e5ff;
+  background: #ffffd7;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3148,11 +3148,53 @@ pre .javascript .function {
 .main {
   background-color: #fff;
 }
+.posts-expand .post-meta {
+  margin: 4px 0 40px 0;
+}
+.post-body ol {
+  padding-left: 0px;
+}
+.post-body ol ol {
+  padding-left: 14px;
+}
+.post-body ol ol ol {
+  padding-left: 14px;
+}
+.post-body ol ol ol ol {
+  padding-left: 14px;
+}
+.post-body ol ol ol ol ol {
+  padding-left: 14px;
+}
+.post-body h2 {
+  font-size: 1.4em;
+}
+.post-body h3 {
+  font-size: 1.2em;
+}
+.post-body h4 {
+  font-size: 1em;
+}
 .footer {
   background-color: #fff;
 }
+a {
+  border-bottom: 0px solid #999;
+}
+.post-body a {
+  border-bottom: 1px solid #999;
+}
+.tag-cloud-tags a {
+  border-bottom: 0px solid #999;
+}
+.btn {
+  border: 2px solid #555 !important;
+}
 .post-block {
   box-shadow: 0 0px 0px 0 rgba(0,0,0,0) !important;
+}
+.category-list-link {
+  border-bottom: 0px solid #999 !important;
 }
 .header-inner {
   box-shadow: 0 0px 0px 0 rgba(0,0,0,0);

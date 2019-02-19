@@ -1841,7 +1841,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #8a39f7;
+  background: #ffdaff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3170,8 +3170,11 @@ pre .javascript .function {
   padding-left: 14px;
 }
 @media (max-width: 767px) {
-  .content-wrap {
-    padding: 24px;
+  .post-body ol {
+    padding-left: 14px;
+  }
+  .post-body ul {
+    padding-left: 14px;
   }
 }
 .post-body h2 {
